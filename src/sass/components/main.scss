@@ -1,0 +1,123 @@
+.--main_color{
+	color: #1e9df2;
+}
+
+.press__title{
+	font-size: 40px;
+	color: #fafafa;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 90px 0px 70px;
+	font-weight: 400;
+}
+.press__wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	font-weight: 500;
+	padding-bottom: 40px;
+}
+.aboutcompany{
+	padding: 70px 40px 70px 130px;
+	.aboutcompany__title{
+		margin-top: 0;
+		text-transform: uppercase;	
+		font-size: 26px;
+	}
+}
+.press__filters{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #6fc0f7;
+	padding: 10px 30px 10px 130px;
+	color: #fff;
+	.filter__item{
+		margin: 20px 70px 20px 0px;
+		cursor: pointer;
+		position: relative;
+		
+	}
+	.filter__item.active{
+		&:after{
+			content: '';
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+		}
+	}
+}
+.press__articles{
+	margin: 35px 40px 35px 130px;
+	.article__item{
+		position: relative;
+		margin-bottom: 60px;
+	}
+	.article__logo{
+		position: absolute;
+		top: 10px;
+		left: -148px;
+		background-image: linear-gradient(143deg, #8ecef8 0%, #1e9df2 100%);
+		box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+		padding: 30px 20px 30px 40px;
+		border-radius: 0px 47px 47px 0px;
+		img{
+			width: 70px;
+			display: block;
+		}
+		&:before{
+			content: '';
+			position: absolute;
+			top: -12px;
+			left: 0;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 0 12px 18px;
+			border-color: transparent transparent #1e9df2 transparent;
+		}
+	}
+	.article__time{
+		font-weight: 300;
+		color: #858585;
+	}
+	.article__title{
+		font-size: 18px;
+		color: #1e9df2;
+		font-weight: 700;
+	}
+	.article__text{
+		font-weight: 300;
+	}
+
+}
+@media screen and (max-width:740px) {
+	// #filter_Presentations{
+	// 	display: none;
+	// }
+	.press__filters{
+		padding: 10px 30px !important;
+		// .filter__item:nth-child(3){
+		// 	margin: 20px 0px !important;
+		// }
+	}
+	.aboutcompany{
+		padding: 40px 30px !important;
+	}
+	.press__articles{
+		margin:34px 30px !important;
+		.article__item{
+			padding-bottom: 40px;
+			border-bottom: 1px solid #1e9df2;
+			.article__logo{
+				left: -48px;
+				padding: 20px 20px 17px 40px;
+			}
+			.article__time{
+				padding: 35px 100px;
+			}
+		}
+	}
+}

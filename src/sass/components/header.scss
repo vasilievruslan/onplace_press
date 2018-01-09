@@ -1,0 +1,400 @@
+html{
+    background-color: #333333;
+}
+
+.sidebar
+{
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    width: 70px;
+    height: 70px;
+    display: none;
+
+    cursor: pointer;
+    text-align-last: left;
+
+    // background-color: rgba(0,0,0,.2);
+
+
+    transition: ease .2s;
+}
+
+/* CLOSE */
+.close .rect:nth-of-type(1),
+.close .rect:nth-of-type(2),
+.close .rect:nth-of-type(3)
+{
+    transition: all 500ms;
+
+    fill: white;
+}
+
+/* OPENED */
+
+.opened .rect:nth-of-type(1)
+{
+    transition: all 500ms;
+    transform: rotate(45deg) translate(10px, -105px);
+
+    fill: white;
+}
+
+.opened .rect:nth-of-type(2)
+{
+    fill: transparent;
+}
+
+.opened .rect:nth-of-type(3)
+{
+    transition: all 500ms;
+    transform: rotate(-45deg) translate(-160px, 65px);
+
+    fill: white;
+}
+
+
+.navbar
+{   
+    position: relative;
+    z-index: 3;
+    display: flex;
+    width: 94vw;
+
+    text-align: center;
+
+    margin: 0 auto;
+
+    justify-content: space-between;
+    .logo__top
+    {
+        padding: 20px 2px 2px 2px;
+        margin: 0px 8px;
+        transition: ease .3s;
+    }
+    .header__logo{
+        display: block;
+        text-transform: none;
+    }
+    .header__logo:hover
+    {
+        .logo__top
+        {
+            background-color: #1e9df2;
+        }
+    }
+    .navbar__links
+    {
+        display: flex;
+
+        align-items: center;
+        .links__item
+        {
+            font-weight: 500;
+
+            display: inline-block;
+
+            margin: 10px 20px;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            color: #fff;
+
+            transition: ease-in-out 0.2s;
+            &:after{
+                position: relative;
+
+                display: block;
+
+                width: 0;
+                height: 3px;
+
+                content: '';
+
+                background-color: #1e9df2;
+
+                visibility: hidden;
+
+                transition: ease-in-out 0.2s;
+            }
+            &:hover{
+                &:after{
+                    visibility: visible;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.feedback-container{
+    position: relative;
+    .space-close{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 2;
+    }
+    .--feedback{
+        position: relative;
+        z-index: 4;
+    }
+
+
+    .feedback-wrap{
+        position: absolute;
+        top: 0px;
+        
+        display: none;
+
+        padding-top: 50px;
+        padding-bottom: 10px;
+        background-color: #333333;
+        border-radius: 15px;
+        z-index: 3;
+        text-align: center;
+
+        a.feedback-ico[href="https://www.linkedin.com/company/onplace-inc."]{
+            svg{
+                g{
+                    fill: #FAFAFA !important;
+                }
+            }
+        } 
+        
+        .feedback-ico{
+            position: relative;
+            z-index: 3;
+            path,
+            ellipse,
+            path,
+            rect{
+                transition: ease-in-out 0.2s;
+
+            }
+            
+
+            &:hover{
+                text-decoration: none;
+                path,
+                ellipse,
+                {
+                    stroke: #1e9df2;
+                }
+                path,
+                rect{
+                    fill: #1e9df2;
+                }
+                #sharp,
+                #twitter,
+                #telegram,
+                #wechat,{
+                    path{
+                        fill:none;
+                        stroke: #1e9df2;
+                    }
+                }
+            }
+        }
+
+
+        svg{
+            width: 40px;
+            height: 100%;
+            margin: 5px;
+
+        }
+    }
+}
+.langswitch-btn{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #2C2F33;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    margin: 0 !important;
+    padding: 15px 0px;
+    &:hover{
+        border-color: #1e9df2;
+    }
+}
+
+.langswitch{
+    position: absolute;
+    width: 50px;
+    top: 90px;
+    display: none;
+    text-align: left;
+}
+
+.langswitch-item{
+    position: relative;
+    width: 80px;
+    padding: 12px 0px;
+    .lang{
+        color: #fff;
+        transition: ease-in-out 0.3s;
+
+        &:hover{
+            .flag{
+                opacity: 1;
+            }
+            span{
+                opacity: 0;
+            }
+        }
+
+    }
+}
+.disabled{
+    color: #ccc;
+    cursor: auto;
+}
+
+.flag{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+}
+body.blur{
+    transition: opacity ease-in-out 0.7s;
+    opacity: 0;
+}
+@media screen and (max-width: 960px){
+    .header{
+        .navbar{
+            .langswitch-wrap{
+                bottom: 35px;
+            }
+        }
+    }
+    .navbar__links{
+        .links__item.hided{
+            color: #333 !important;
+        }
+    }
+    .navbar{
+        .langswitch-wrap{
+            position: absolute;
+            margin: 20px;
+            top: auto;
+            bottom: 0;
+            left: 0px;
+        }
+        .langswitch-btn{
+            border: 2px solid #1e9df2;
+        }
+        ul.langswitch{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            bottom: 70px;
+            top: auto;
+            width: auto;
+            display: none;
+
+            .langswitch-item{
+                padding: 10px 0 0 0;
+                display: inline-block;
+                line-height: 3;
+            }
+        }
+    }
+}
+.navbar{
+    .footer-contacts{
+        display: none;
+        width: 200px;
+        padding: 10px 20px;
+        color: #FFFFFF;
+        position: absolute;
+        bottom: 0;
+
+    }
+}
+@media screen and (max-width: 960px)
+{   
+    .header{
+        
+    }
+    .feedback-container .feedback-wrap{
+        width: 260px;
+        right: 0;
+        box-shadow: -1px 2px 12px -3px #000;
+    }
+    div.navbar
+    {
+        .footer-contacts{
+            display: block;
+        }
+        .navbar__links
+        {
+            position: fixed;
+            top: 0;
+            right: 0;
+
+            margin-right: -3vw;
+
+            flex-direction: column;
+
+            width: 0px;
+            height: 100%;
+
+            opacity: 0;
+            
+            visibility: hidden;
+
+            transition: ease .2s;
+
+            background-color: rgba(0,0,0,.6);
+
+            align-items: flex-end;
+            text-align: left !important;
+
+
+
+        }
+        .--visible
+        {
+            top: 0;
+            right: 0;
+
+            width: 200px;
+            visibility: visible;
+
+            opacity: 1;
+
+            align-items: flex-start;
+            z-index: 1;
+        }
+        .sidebar{
+            display: block;
+            z-index: 1;
+        }
+
+        .sidebar.--on{
+            right: 180px;
+            position: fixed;
+        }
+
+    }
+
+}
+.burger-icon{
+    width: 100%;
+    height: 70px;
+}
+
+
