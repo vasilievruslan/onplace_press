@@ -650,11 +650,10 @@ body.blur {
   color: #1e9df2; }
 
 .press__title {
-  font-size: 40px;
+  font-size: 42px;
   color: #fafafa;
-  text-transform: uppercase;
   text-align: center;
-  margin: 90px 0px 70px;
+  margin: 65px 0px 95px;
   font-weight: 400; }
 
 .press__wrapper {
@@ -677,7 +676,7 @@ body.blur {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #6fc0f7;
+  background-color: #1f9df2;
   padding: 10px 30px 10px 130px;
   color: #fff; }
   .press__filters .filter__item {
