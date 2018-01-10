@@ -3065,7 +3065,7 @@ $(function () {
 
     var $whitePapper = $('#show-pop-up');
     var $whitePapperBtn = $('.wpbtn-footer');
-    var $overlay = $('.cover');
+    var $overlay = $('.whitepapper-overlay');
     var $closeBtn = $('.close-button');
     var $popUpWhitepapper = $('.whitepapper');
     var $feedback = $('#show-feedback');
@@ -3115,7 +3115,8 @@ $(function () {
     });
 
 
-    $closeBtn.click(function() {
+    $closeBtn.click(function(e) {
+        e.preventDefault();
         $overlay.fadeOut(400);
         $popUpWhitepapper.fadeOut(400);
     });
