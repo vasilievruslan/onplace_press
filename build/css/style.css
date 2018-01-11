@@ -701,7 +701,6 @@ body.blur {
     position: absolute;
     top: 10px;
     left: -148px;
-    background-image: linear-gradient(143deg, #8ecef8 0%, #1e9df2 100%);
     box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
     padding: 30px 20px 30px 40px;
     border-radius: 0px 47px 47px 0px; }
@@ -716,7 +715,10 @@ body.blur {
       width: 0;
       height: 0;
       border-style: solid;
-      border-width: 0 0 12px 18px;
+      border-width: 0 0 12px 18px; }
+  .press__articles .--flag-blue {
+    background-image: linear-gradient(143deg, #8ecef8 0%, #1e9df2 100%); }
+    .press__articles .--flag-blue:before {
       border-color: transparent transparent #1e9df2 transparent; }
   .press__articles .article__time {
     font-weight: 300;
