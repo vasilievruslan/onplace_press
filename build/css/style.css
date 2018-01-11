@@ -723,8 +723,12 @@ body.blur {
     color: #858585; }
   .press__articles .article__title {
     font-size: 18px;
-    color: #1e9df2;
     font-weight: 700; }
+    .press__articles .article__title a {
+      text-decoration: none;
+      color: #1e9df2; }
+      .press__articles .article__title a:hover {
+        text-decoration: underline; }
   .press__articles .article__text {
     font-weight: 300; }
 
