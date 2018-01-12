@@ -84,10 +84,30 @@
 		&:before{
 			border-color: transparent transparent #1e9df2 transparent;
 
-			
-//=======================================================================================================================================
-		}
+			}
 	}
+
+	.--flag-bench{
+		background-image: linear-gradient(143deg, #8ecef8 0%, #5a67b9 45%);
+
+		&:before{
+			border-color: transparent transparent #5a67b9 transparent;
+
+			}	
+	}
+
+	.--flag-jinse{
+		background-image: linear-gradient(143deg, #8ecef8 0%, #000000 45%);
+
+		&:before{
+			border-color: transparent transparent #000000 transparent;
+
+			}	
+	}
+
+	
+
+//=======================================================================================================================================
 
 	.article__time{
 		font-weight: 300;
