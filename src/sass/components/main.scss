@@ -95,6 +95,46 @@
 
 	}
 
+		.--flag-black{
+		background-image: linear-gradient(143deg, #808080 0%, #333333 100%);
+
+		&:before{
+			border-color: transparent transparent #696969 transparent;
+
+		}
+
+	}
+
+		.--flag-orange{
+		background-image: linear-gradient(143deg, #ffe273 0%, #ffcb00 100%);
+
+		&:before{
+			border-color: transparent transparent #ffcb00 transparent;
+
+		}
+
+	}
+
+		.--flag-heaven{
+		background-image: linear-gradient(143deg, #5F8ED3 0%, #0044A8 100%);
+
+		&:before{
+			border-color: transparent transparent #0044A8 transparent;
+
+		}
+
+	}
+
+		.--flag-peach{
+		background-image: linear-gradient(143deg, #FFDBAF 0%, #FFBE6E 100%);
+
+		&:before{
+			border-color: transparent transparent #FFBE6E transparent;
+
+		}
+
+	}
+
 //=======================================================================================================================================
 
 

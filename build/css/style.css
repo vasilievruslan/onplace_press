@@ -732,6 +732,22 @@ body.blur {
     background-image: linear-gradient(143deg, #8ecef8 0%, #1e9df2 100%); }
     .press__articles .--flag-blue:before {
       border-color: transparent transparent #1e9df2 transparent; }
+  .press__articles .--flag-black {
+    background-image: linear-gradient(143deg, #808080 0%, #333333 100%); }
+    .press__articles .--flag-black:before {
+      border-color: transparent transparent #696969 transparent; }
+  .press__articles .--flag-orange {
+    background-image: linear-gradient(143deg, #ffe273 0%, #ffcb00 100%); }
+    .press__articles .--flag-orange:before {
+      border-color: transparent transparent #ffcb00 transparent; }
+  .press__articles .--flag-heaven {
+    background-image: linear-gradient(143deg, #5F8ED3 0%, #0044A8 100%); }
+    .press__articles .--flag-heaven:before {
+      border-color: transparent transparent #0044A8 transparent; }
+  .press__articles .--flag-peach {
+    background-image: linear-gradient(143deg, #FFDBAF 0%, #FFBE6E 100%); }
+    .press__articles .--flag-peach:before {
+      border-color: transparent transparent #FFBE6E transparent; }
   .press__articles .article__time {
     font-weight: 300;
     color: #858585; }
