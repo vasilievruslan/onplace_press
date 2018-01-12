@@ -22,3 +22,5 @@ RewriteRule ^(.*)$ http://press.onplace.io/$1 [R=301,L]
 RewriteCond %{REQUEST_URI} /index.html
 RewriteCond %{QUERY_STRING} ^\z
 RewriteRule ^(.*)$ http://press.onplace.io/? [R=301,L]
+
+ErrorDocument 404 https://onplace.io/404.html
