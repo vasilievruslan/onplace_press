@@ -732,14 +732,6 @@ body.blur {
     background-image: linear-gradient(143deg, #8ecef8 0%, #1e9df2 100%); }
     .press__articles .--flag-blue:before {
       border-color: transparent transparent #1e9df2 transparent; }
-  .press__articles .--flag-bench {
-    background-image: linear-gradient(143deg, #8ecef8 0%, #5a67b9 45%); }
-    .press__articles .--flag-bench:before {
-      border-color: transparent transparent #5a67b9 transparent; }
-  .press__articles .--flag-jinse {
-    background-image: linear-gradient(143deg, #8ecef8 0%, #000000 45%); }
-    .press__articles .--flag-jinse:before {
-      border-color: transparent transparent #000000 transparent; }
   .press__articles .article__time {
     font-weight: 300;
     color: #858585; }
