@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="62px" height="61px" viewBox="0 0 62 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>CoinTelegraph</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CoinTelegraph" transform="translate(1.000000, 1.000000)" stroke-width="2">
+            <g id="Group" stroke="#DDDDDD">
+                <ellipse id="Oval" cx="19.4323467" cy="12.7335526" rx="18.8105116" ry="12.7335526"></ellipse>
+                <path d="M0.621835092,20.7927631 C0.621835092,27.8253101 9.04358797,33.5263159 19.4323467,33.5263159 C29.8211054,33.5263159 38.2428582,27.8253101 38.2428582,20.7927631" id="Oval-Copy"></path>
+                <path d="M0.621835092,28.5296054 C0.621835092,35.5621521 9.04358797,41.2631578 19.4323467,41.2631578 C29.8211054,41.2631578 38.2428582,35.5621521 38.2428582,28.5296054" id="Oval-Copy-2"></path>
+                <path d="M0.904347825,13.5394737 L0.904347825,35.6217105" id="Line" stroke-linecap="square"></path>
+                <path d="M0.621835092,36.2664473 C0.621835092,43.2989943 9.04358797,49 19.4323467,49 C29.8211054,49 38.2428582,43.2989943 38.2428582,36.2664473" id="Oval-Copy-3"></path>
+            </g>
+            <polygon id="Path-2" stroke="#FDCE03" fill="#333333" fill-rule="nonzero" points="23.4575976 5 59 5 56.3859708 15.9177579 44.3922463 15.9177579 39.7908681 28.5858917 54.0771741 20.732343 33.2054798 54 36.6150205 40.084303 26.8060922 44.7652956 33.2054798 16.5094564 21 16.5094564"></polygon>
+        </g>
+    </g>
+</svg>
