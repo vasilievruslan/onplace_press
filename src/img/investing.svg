@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="53px" viewBox="0 0 87 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>investing</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-563.000000, -75.000000)">
+        <g id="investing" transform="translate(563.000000, 75.000000)">
+            <path d="M12.692,4.631 L12.692,53 L0.065,53 L0.065,8.31320487 M51.065,29.954 L51.065,53 L39.5782805,53 L39.5782805,32.99 C39.5782805,28.781 37.5166235,26.1321505 33.9723197,26.1321505 C30.1748513,26.2011505 28.2147744,29.057 27.7717364,33.266 L27.7717364,53 L16.4182061,53 L16.4182061,19.5053988 L27.3308228,16.154 L27.3308228,22.226 C29.7358861,17.948 33.829969,16.154 38.829969,16.154 C46.2983234,16.154 51.065,21.191 51.065,29.954 Z M50.065,17.289994 L62.1099522,17.289994 L68.5239552,41.1824965 L74.9673156,17.2302633 L86.3411523,17.2302633 L74.9673156,53 L61.7583265,53 L50.065,17.289994 Z" id="Inv" fill="#FFFFFF"></path>
+            <polygon id="Path-5" fill="#FFA603" points="63 3.69919959 63 14.8445771 75.8528024 11.080843 75.8528024 0"></polygon>
+        </g>
+    </g>
+</svg>
