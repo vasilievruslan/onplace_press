@@ -478,6 +478,8 @@ html {
     border-radius: 15px;
     z-index: 3;
     text-align: center; }
+    .feedback-container .feedback-wrap a {
+      text-decoration: none; }
     .feedback-container .feedback-wrap a.feedback-ico[href="https://www.linkedin.com/company/onplace-inc."] svg g {
       fill: #FAFAFA !important; }
     .feedback-container .feedback-wrap .feedback-ico {
@@ -486,7 +488,8 @@ html {
       .feedback-container .feedback-wrap .feedback-ico path,
       .feedback-container .feedback-wrap .feedback-ico ellipse,
       .feedback-container .feedback-wrap .feedback-ico path,
-      .feedback-container .feedback-wrap .feedback-ico rect {
+      .feedback-container .feedback-wrap .feedback-ico rect,
+      .feedback-container .feedback-wrap .feedback-ico polyline {
         transition: ease-in-out 0.2s; }
       .feedback-container .feedback-wrap .feedback-ico:hover {
         text-decoration: none; }
@@ -500,8 +503,22 @@ html {
         .feedback-container .feedback-wrap .feedback-ico:hover #twitter path,
         .feedback-container .feedback-wrap .feedback-ico:hover #telegram path,
         .feedback-container .feedback-wrap .feedback-ico:hover #wechat path {
-          fill: none;
+          fill: transparent;
           stroke: #1e9df2; }
+        .feedback-container .feedback-wrap .feedback-ico:hover #reddit polyline,
+        .feedback-container .feedback-wrap .feedback-ico:hover #reddit path,
+        .feedback-container .feedback-wrap .feedback-ico:hover #reddit ellipse
+circle {
+          stroke: #1e9df2 !important; }
+        .feedback-container .feedback-wrap .feedback-ico:hover #reddit circle {
+          stroke: #1f9df2;
+          fill: #1e9df2 !important; }
+        .feedback-container .feedback-wrap .feedback-ico:hover .fill {
+          fill: #1e9df2;
+          stroke: #1e9df2; }
+        .feedback-container .feedback-wrap .feedback-ico:hover .white {
+          fill: #fff !important;
+          stroke: #fff; }
     .feedback-container .feedback-wrap svg {
       width: 40px;
       height: 100%;

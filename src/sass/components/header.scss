@@ -156,6 +156,9 @@ html{
         border-radius: 15px;
         z-index: 3;
         text-align: center;
+        a{
+            text-decoration: none;
+        }
 
         a.feedback-ico[href="https://www.linkedin.com/company/onplace-inc."]{
             svg{
@@ -171,7 +174,8 @@ html{
             path,
             ellipse,
             path,
-            rect{
+            rect,
+            polyline{
                 transition: ease-in-out 0.2s;
 
             }
@@ -191,11 +195,31 @@ html{
                 #sharp,
                 #twitter,
                 #telegram,
-                #wechat,{
+                #wechat{
                     path{
-                        fill:none;
+                        fill: transparent;
                         stroke: #1e9df2;
                     }
+                }
+                #reddit{
+                    polyline,
+                    path,
+                    ellipse
+                    circle{
+                        stroke: #1e9df2 !important;
+                    }
+                    circle{
+                        stroke: #1f9df2;
+                        fill: #1e9df2 !important;
+                    }
+                }
+                .fill{
+                    fill: #1e9df2;
+                    stroke: #1e9df2;
+                }
+                .white{
+                    fill: #fff !important;
+                    stroke: #fff ;
                 }
             }
         }
